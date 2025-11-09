@@ -1,7 +1,7 @@
-/* Add your CSS to this file */
 body {
     margin: 0;
     font-size: 16px;
+    
 }
 
 .container {
@@ -9,3 +9,31 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+img {
+    height: 25%;
+    width: 25%;
+    border-radius: 10px;
+}
+/* landing page header be to the left and the list of navigation links should be to the right without any bullet points */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul { /* navigation links*/
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    color: #2D3748;
+}
+
+header h1 { /* header heading*/
+    font-size: 18px;
+    color: #2D3748;
+}
+
+/* The Hero Overview section should be layed out with the image to the left and the text to the right. */
