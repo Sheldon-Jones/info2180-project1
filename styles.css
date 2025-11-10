@@ -1,5 +1,6 @@
 body {
     margin: 10px;
+    background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-size: 18px;
     line-height: 1.6;
@@ -15,6 +16,7 @@ body {
 
 /* landing page header be to the left and the list of navigation links should be to the right without any bullet points */
 header .container {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,8 +29,12 @@ nav ul { /* navigation links*/
     gap: 30px;
     margin: 0;
     padding: 0;
-    color: #2D3748;
+    color: #6b7280;
 }
+nav ul li :hover {
+    color:#5A67D8;
+}
+
 
 header h1 { /* header heading*/
     font-size: 18px;
@@ -38,7 +44,7 @@ header h1 { /* header heading*/
 /* The Hero Overview section should be layed out with the image to the left and the text to the right. */
 .overview-hero {     /* Section with "Live your Healthiest Life Now" background format*/
     background-color: #E2E8F0;
-    padding: 80px;
+    padding: 50px;
 }
 
 .overview-hero-text h2 {  
@@ -76,6 +82,7 @@ header h1 { /* header heading*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .card img {
@@ -85,13 +92,7 @@ header h1 { /* header heading*/
 }
 
 .card-body {
-    padding: 20px;
-}
-
-.learn-about h2 {
- font-size: 21px;
-    color: #48BB78;
-    margin-bottom: 10px;
+    padding: 30px;
 }
 
 .card-body p {
@@ -103,6 +104,12 @@ header h1 { /* header heading*/
     color: #48BB78;
     margin-bottom: 40px;
     text-align: center;
+}
+.card-body h3{
+     font-size: 21px;
+    color: #48BB78;
+    margin-bottom: 10px;
+
 }
 
 .card {
@@ -234,3 +241,53 @@ the Subscribe button should be side-by-side. */
     text-align: center;
 }
 
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    flex: 1;
+    margin: 0;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.newsletter .btn {
+    background-color: #5A67D8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0s;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter .btn:hover {
+    background-color: #4C51BF;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+
+/**/
