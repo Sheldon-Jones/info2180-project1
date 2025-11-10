@@ -9,7 +9,7 @@ document.addEventListener ('DOMContentLoaded', function() {
             event.preventDefault();
             const emailAdd = enteredEmail.value.trim();
             if (emailAdd ===""){
-                msg.textContent = 'You did not enter an email address';
+                msg.textContent = 'Please enter a valid email address';
                 msg.style.color = '#ff0000';
             }
             else{
