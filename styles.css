@@ -179,8 +179,8 @@ heading, article body and link should be beside it.*/
 }
 
 .stories article img {
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
@@ -218,3 +218,19 @@ heading, article body and link should be beside it.*/
     text-decoration: none;
     font-weight: bold;
 }
+
+
+/*The contents of the "Newsletter" section should be centered. The input field and 
+the Subscribe button should be side-by-side. */
+.newsletter h3 {
+    margin: 15px;
+    font-size: 28px;
+}
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
