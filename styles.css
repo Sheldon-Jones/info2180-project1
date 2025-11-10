@@ -10,11 +10,7 @@ body {
     width: 100%;
 }
 
-img {
-    height: 25%;
-    width: 25%;
-    border-radius: 10px;
-}
+
 /* landing page header be to the left and the list of navigation links should be to the right without any bullet points */
 header .container {
     display: flex;
@@ -37,3 +33,38 @@ header h1 { /* header heading*/
 }
 
 /* The Hero Overview section should be layed out with the image to the left and the text to the right. */
+.overview-hero {     /* Section with "Live your Healthiest Life Now" background format*/
+    background-color: #E2E8F0;
+    padding: 80px;
+}
+
+.overview-hero-text h2 {  
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2D3748;
+}
+.overview-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.overview-hero-image {
+    flex: 1;
+}
+
+.overview-hero-image img {
+    width: 50%;
+    height:50%;
+    border-radius: 10px;
+}
+
+.overview-hero-text {
+    flex: 1;
+}
+
+.overview-hero-text p {
+    color: #4A5568;
+}
+
+
