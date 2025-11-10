@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-size: 16px;
-    
+        
 }
 
 .container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 900px;
     width: 100%;
 }
 
@@ -67,4 +67,23 @@ header h1 { /* header heading*/
     color: #4A5568;
 }
 
+/*Learn About" section layed out using CSS Grid into 3 columns. Each Card with an image with a heading and card body text below it.*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+
+
+.card img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
 
