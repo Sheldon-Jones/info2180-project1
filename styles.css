@@ -1,12 +1,14 @@
 body {
-    margin: 0;
-    font-size: 16px;
-        
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2D3748;    
 }
 
 .container {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
 }
 
@@ -20,6 +22,7 @@ header .container {
 
 nav ul { /* navigation links*/
     display: flex;
+    text-decoration: none;
     list-style: none;
     gap: 30px;
     margin: 0;
@@ -75,10 +78,8 @@ header h1 { /* header heading*/
     gap: 40px;
 }
 
-
-
 .card img {
-    width: 50%;
+    width: 100%;
     height: 50%;
     object-fit: cover;
 }
@@ -87,3 +88,133 @@ header h1 { /* header heading*/
     padding: 20px;
 }
 
+.learn-about h2 {
+ font-size: 21px;
+    color: #48BB78;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    color: #718096;
+    margin: 0;
+}
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/*"COVID-19 Testing Programme" section, the "Learn more" button should be to the right, while the heading and paragraph should be to the left
+*/
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.testing-desciption {
+    flex: 2;
+}
+
+.testing-desciption h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.testing-desciption p {
+    margin: 0;
+    color: #E2E8F0;
+}
+
+.cta .btn {
+    background-color: #48BB78;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0s;
+    display: flex;
+    text-decoration: none;
+}
+
+.cta .btn:hover {
+    background-color: #38A169;
+}
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+    padding: 60px 0;
+}
+
+
+/* The "Recent Stories" section should be styled to have the image to the left and the 
+heading, article body and link should be beside it.*/
+
+.stories {
+    padding: 60px 0;
+}
+
+
+.stories article {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+
+.stories article img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.article-body {
+    flex: 1;
+}
+
+
+.article-body a:hover {
+    text-decoration: underline;
+}
+
+.stories h2 {
+    color: #5A67D8;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.article-body p {
+    color: #718096;
+    margin-bottom: 15px;
+}
+
+.article-body h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2D3748;
+}
+
+.article-body a {
+    color: #5A67D8;
+    text-decoration: none;
+    font-weight: bold;
+}
